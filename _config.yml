@@ -1,0 +1,53 @@
+# Configuración del Blog - NachoWeb3
+title: "NachoWeb3 Blog"
+description: "Noticias de IA, Blockchain y Tutoriales de Referidos"
+author: "NachoWeb3"
+email: contacto@nachoweb3.com
+url: "https://nachoweb3.github.io"
+baseurl: "/blog"
+
+# Redes sociales
+twitter_username: nachoweb3
+github_username: nachoweb3
+
+# Configuración de Jekyll
+markdown: kramdown
+theme: minima
+permalink: /:categories/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Colecciones
+collections:
+  categories:
+    output: true
+
+# Configuración de paginación
+paginate: 10
+paginate_path: "/page:num/"
+
+# Categorías del blog
+categories_list:
+  - name: "IA"
+    slug: "ia"
+    description: "Últimas noticias y avances en Inteligencia Artificial"
+  - name: "Blockchain"
+    slug: "blockchain"
+    description: "Novedades del mundo blockchain y criptomonedas"
+  - name: "Tutoriales"
+    slug: "tutoriales"
+    description: "Guías paso a paso para programas de referidos"
+
+# Exclusiones
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - README.md

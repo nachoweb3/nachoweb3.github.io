@@ -1,0 +1,17 @@
+<article class="post-card">
+    <a href="{{ include.post.url | relative_url }}" class="post-card-link">
+        <div class="post-card-header">
+            <span class="category-badge category-{{ include.post.categories[0] }}">
+                {{ include.post.categories[0] | upcase }}
+            </span>
+            <time datetime="{{ include.post.date | date_to_xmlschema }}">
+                {{ include.post.date | date: "%d/%m/%Y" }}
+            </time>
+        </div>
+        <h3 class="post-card-title">{{ include.post.title }}</h3>
+        <p class="post-card-excerpt">{{ include.post.excerpt | strip_html | truncate: 150 }}</p>
+        <div class="post-card-footer">
+            <span class="read-more">Leer más →</span>
+        </div>
+    </a>
+</article>

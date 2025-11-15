@@ -1,0 +1,9 @@
+# Si tienes un dominio personalizado, añádelo aquí
+# Ejemplo: blog.nachoweb3.com
+#
+# Instrucciones:
+# 1. Descomenta la línea de abajo y reemplaza con tu dominio
+# 2. Configura los DNS en tu proveedor de dominio
+# 3. Agrega un registro CNAME apuntando a: TU_USUARIO.github.io
+#
+# Para más información: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site

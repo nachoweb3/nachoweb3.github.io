@@ -1,0 +1,43 @@
+---
+layout: default
+title: "Inicio"
+---
+
+<section class="hero container">
+    <h1>NachoWeb3 Blog</h1>
+    <p>Tu fuente de noticias sobre Inteligencia Artificial, Blockchain y las mejores guías de programas de referidos</p>
+</section>
+
+<div class="container">
+    <!-- Categorías destacadas -->
+    <section class="categories-section">
+        <h2 class="text-center">Explora por Categoría</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <h3>🤖 Inteligencia Artificial</h3>
+                <p>Últimas noticias, avances y herramientas de IA que están transformando el mundo</p>
+                <a href="{{ '/categorias/ia' | relative_url }}" class="category-link">Ver artículos de IA</a>
+            </div>
+            <div class="category-card">
+                <h3>⛓️ Blockchain</h3>
+                <p>Novedades del ecosistema blockchain, criptomonedas, DeFi, NFTs y Web3</p>
+                <a href="{{ '/categorias/blockchain' | relative_url }}" class="category-link">Ver artículos de Blockchain</a>
+            </div>
+            <div class="category-card">
+                <h3>📚 Tutoriales</h3>
+                <p>Guías paso a paso para sacar el máximo provecho de programas de referidos</p>
+                <a href="{{ '/categorias/tutoriales' | relative_url }}" class="category-link">Ver Tutoriales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Últimos artículos -->
+    <section class="latest-posts">
+        <h2 class="text-center mb-4">Últimos Artículos</h2>
+        <div class="posts-grid">
+            {% for post in site.posts limit:6 %}
+                {% include post-card.html post=post %}
+            {% endfor %}
+        </div>
+    </section>
+</div>

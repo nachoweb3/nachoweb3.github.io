@@ -1,0 +1,11 @@
+---
+layout: page
+title: "Inteligencia Artificial"
+description: "Últimas noticias y avances en el mundo de la IA"
+---
+
+<div class="posts-grid">
+    {% for post in site.categories.ia %}
+        {% include post-card.html post=post %}
+    {% endfor %}
+</div>

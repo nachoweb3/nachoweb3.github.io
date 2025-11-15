@@ -1,0 +1,146 @@
+🌐 Paso 1: Activar GitHub Pages (hazlo ahora)
+
+  En tu navegador:
+
+  1. Ve a: https://github.com/nachoweb3/nachoweb3.github.io
+  2. Haz clic en Settings ⚙️
+  3. Menú lateral → Pages
+  4. En "Build and deployment":
+    - Source: Deploy from a branch
+    - Branch: Selecciona main y / (root)
+    - Haz clic en Save
+  5. Espera 2-3 minutos
+  6. Refresca la página de Settings → Pages
+  7. Verás: "Your site is live at https://nachoweb3.github.io"
+
+  Tu blog estará en: https://nachoweb3.github.io
+
+  ---
+  📢 Paso 2: Promocionar tu blog
+
+  En Twitter/X (tu canal @nachoweb3)
+
+  Tweet de lanzamiento:
+  🚀 ¡Lancé mi nuevo blog!
+
+  📰 Noticias de IA y Blockchain
+  📚 Tutoriales de referidos
+  💡 Contenido gratuito cada semana
+
+  Lee el primer artículo sobre InVideo AI 👇
+  https://nachoweb3.github.io
+
+  #IA #Blockchain #Web3
+
+  Estrategia diaria:
+  - Comparte cada artículo nuevo
+  - Haz hilos con puntos clave del post
+  - Usa hashtags relevantes
+  - Tag a personas/proyectos mencionados
+
+  En tu bio de Twitter
+
+  🤖 IA, Blockchain y Web3
+  📝 Blog: nachoweb3.github.io
+  🎥 Tutoriales y noticias cripto
+
+  Redes sociales adicionales
+
+  Instagram:
+  - Stories con link al blog
+  - Posts con highlights de artículos
+  - Carruseles educativos
+
+  TikTok:
+  - Videos cortos sobre temas del blog
+  - "Link en bio" → tu blog
+
+  LinkedIn:
+  - Comparte artículos de IA/Blockchain
+  - Público profesional
+
+  YouTube:
+  - Crea videos sobre los temas
+  - Link en descripción
+
+  Comunidades
+
+  Reddit:
+  - r/CryptoCurrency
+  - r/Blockchain
+  - r/ArtificialIntelligence
+  - r/ChatGPT
+
+  Discord/Telegram:
+  - Únete a comunidades de cripto/IA
+  - Aporta valor primero
+  - Comparte cuando sea relevante
+
+  Foros:
+  - BitcoinTalk
+  - Crypto forums
+  - AI communities
+
+  SEO (para Google)
+
+  Tu blog ya tiene:
+  - ✅ Sitemap automático
+  - ✅ Meta tags
+  - ✅ URLs amigables
+
+  Mejóralo:
+  1. Usa Google Search Console
+    - Añade tu sitio: https://nachoweb3.github.io
+    - Envía el sitemap
+  2. Escribe contenido regular
+    - Mínimo 1-2 posts por semana
+    - Usa keywords relevantes
+    - Títulos atractivos
+
+  Email marketing
+
+  1. Añade formulario de suscripción (Mailchimp gratis)
+  2. Envía newsletter semanal
+  3. Resumen de artículos nuevos
+
+  Colaboraciones
+
+  - Guest posts en otros blogs
+  - Entrevistas en podcasts
+  - Colabora con otros creadores
+  - Menciona a influencers (pueden compartir)
+
+  📊 Mide resultados
+
+  Google Analytics (gratis)
+
+  1. Crea cuenta en https://analytics.google.com
+  2. Obtén tu ID de seguimiento
+  3. Te ayudo a añadirlo al blog
+
+  Bitly para links
+
+  - Acorta URLs del blog
+  - Ve cuántos clicks obtienes
+
+  ---
+  🎯 Plan de acción inmediato
+
+  Hoy:
+  - Activa GitHub Pages
+  - Verifica que nachoweb3.github.io funciona
+  - Actualiza tu bio de Twitter con el link
+  - Tweet de lanzamiento
+
+  Esta semana:
+  - Comparte los 7 artículos (1 por día)
+  - Únete a 3-5 comunidades relevantes
+  - Configura Google Analytics
+
+  Siguiente mes:
+  - Publica 8-10 artículos nuevos
+  - Construye audiencia en Twitter
+  - Empieza newsletter
+
+  ---
+  ¿Ya activaste GitHub Pages? Dime cuando esté listo para verificar que funciona correctamente.

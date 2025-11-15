@@ -12,7 +12,6 @@ github_username: nachoweb3
 
 # Configuración de Jekyll
 markdown: kramdown
-theme: minima
 permalink: /:categories/:year/:month/:day/:title/
 
 # Plugins

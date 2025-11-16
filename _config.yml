@@ -15,6 +15,8 @@ github_username: nachoweb3
 # Configuración de Jekyll
 markdown: kramdown
 permalink: /:categories/:year/:month/:day/:title/
+future: true
+show_drafts: false
 
 # Plugins
 plugins:

@@ -2,6 +2,7 @@
 layout: post
 title: "GPT-5: Rumores sobre el próximo gran modelo de OpenAI"
 date: 2025-11-15 10:00:00 -0500
+image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop"
 categories: [ia]
 tags: [openai, gpt-5, modelos-lenguaje, ia-generativa]
 excerpt: "Los últimos rumores sugieren que GPT-5 podría lanzarse en 2026 con capacidades sin precedentes. Descubre qué podemos esperar del próximo modelo de OpenAI."

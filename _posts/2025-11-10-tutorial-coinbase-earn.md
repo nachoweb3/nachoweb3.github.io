@@ -2,6 +2,7 @@
 layout: post
 title: "Coinbase Earn: Gana cripto gratis viendo videos (Guía 2025)"
 date: 2025-11-10 13:20:00 -0500
+image: "https://images.unsplash.com/photo-1533821312764-eb0483f98f69?w=800&h=600&fit=crop"
 categories: [tutoriales]
 tags: [coinbase, earn, criptomonedas-gratis, aprender]
 excerpt: "Aprende cómo ganar criptomonedas gratis con Coinbase Earn. Tutorial completo paso a paso para principiantes."

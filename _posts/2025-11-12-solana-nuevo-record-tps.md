@@ -2,6 +2,7 @@
 layout: post
 title: "Solana alcanza nuevo récord: 65,000 TPS en mainnet"
 date: 2025-11-12 16:45:00 -0500
+image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&h=600&fit=crop"
 categories: [blockchain]
 tags: [solana, escalabilidad, tps, rendimiento]
 excerpt: "Solana rompe su propio récord procesando más de 65,000 transacciones por segundo. Analizamos qué significa esto para el futuro de blockchain."

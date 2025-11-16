@@ -2,6 +2,7 @@
 layout: post
 title: "Compré un NFT por $1.2M que resultó ser un JPG robado de Google (y no puedo hacer nada)"
 date: 2025-11-07 14:00:00 -0500
+image: "https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=800&h=600&fit=crop"
 categories: [blockchain]
 tags: [nft, estafas, cripto-fail, derechos-digitales]
 excerpt: "Gasté toda mi fortuna en un Bored Ape falso. El vendedor desapareció. La policía no puede ayudar. Los abogados se ríen. Web3 es el salvaje oeste."

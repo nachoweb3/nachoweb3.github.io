@@ -2,6 +2,7 @@
 layout: post
 title: "Guía completa: Maximiza tus ganancias con referidos de Binance"
 date: 2025-11-11 11:00:00 -0500
+image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop"
 categories: [tutoriales]
 tags: [binance, referidos, criptomonedas, ingresos-pasivos]
 excerpt: "Aprende cómo ganar hasta 50% de comisión compartiendo tu link de referido de Binance. Tutorial paso a paso para principiantes."

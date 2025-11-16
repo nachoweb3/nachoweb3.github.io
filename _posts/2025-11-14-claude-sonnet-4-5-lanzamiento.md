@@ -2,6 +2,7 @@
 layout: post
 title: "Claude Sonnet 4.5: Anthropic lanza su modelo más potente"
 date: 2025-11-14 14:30:00 -0500
+image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=600&fit=crop"
 categories: [ia]
 tags: [anthropic, claude, modelos-lenguaje, ia-segura]
 excerpt: "Anthropic presenta Claude Sonnet 4.5, un modelo que promete redefinir los estándares de calidad y seguridad en IA. Conoce todas sus novedades."

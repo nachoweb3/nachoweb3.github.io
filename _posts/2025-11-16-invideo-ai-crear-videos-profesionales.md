@@ -2,6 +2,7 @@
 layout: post
 title: "InVideo AI: Crea videos profesionales con IA en minutos (Guía completa 2025)"
 date: 2025-11-16 09:00:00 -0500
+image: "https://images.unsplash.com/photo-1492619375914-88005aa9e8fb?w=800&h=600&fit=crop"
 categories: [tutoriales]
 tags: [invideo, ia-generativa, creacion-contenido, video-marketing, referidos]
 excerpt: "Descubre cómo InVideo AI revoluciona la creación de videos. Desde texto a video profesional en minutos, con programa de afiliados incluido. Tutorial completo paso a paso."

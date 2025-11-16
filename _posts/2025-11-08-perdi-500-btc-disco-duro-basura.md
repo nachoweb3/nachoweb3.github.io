@@ -2,6 +2,7 @@
 layout: post
 title: "Perdí 500 BTC en un disco duro que tiré a la basura ($20 millones perdidos para siempre)"
 date: 2025-11-08 10:30:00 -0500
+image: "https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=800&h=600&fit=crop"
 categories: [blockchain]
 tags: [bitcoin, horror-crypto, historias-reales, cripto-perdida]
 excerpt: "En 2013 tiré un disco duro con 500 Bitcoin. Hoy valen $20 millones. Esta es mi historia y la de otros que perdieron fortunas en cripto para siempre."

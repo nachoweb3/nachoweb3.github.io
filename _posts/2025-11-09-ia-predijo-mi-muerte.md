@@ -2,6 +2,7 @@
 layout: post
 title: "Esta IA predijo cuándo voy a morir (y acertó con mi abuela)"
 date: 2025-11-09 08:00:00 -0500
+image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop"
 categories: [ia]
 tags: [ia-salud, predicciones, tecnologia-controversia, life2vec]
 excerpt: "Investigadores daneses crearon una IA que predice tu muerte con 78% de precisión. La probé y los resultados me dejaron sin palabras."

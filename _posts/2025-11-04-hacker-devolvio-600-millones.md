@@ -2,6 +2,7 @@
 layout: post
 title: "Hacker robó $600M en cripto y luego lo devolvió TODO (la historia más rara de DeFi)"
 date: 2025-11-04 16:00:00 -0500
+image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=600&fit=crop"
 categories: [blockchain]
 tags: [hacking, defi, poly-network, white-hat]
 excerpt: "El hack más grande de la historia: $600M robados en minutos. Luego el hacker... ¿devolvió todo? WTF. Esta es la historia más extraña de crypto."

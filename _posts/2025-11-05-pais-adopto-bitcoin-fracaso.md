@@ -2,6 +2,7 @@
 layout: post
 title: "El Salvador adoptó Bitcoin como moneda oficial: 2 años después es un desastre total"
 date: 2025-11-05 09:30:00 -0500
+image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=800&h=600&fit=crop"
 categories: [blockchain]
 tags: [bitcoin, el-salvador, economia, fracaso-crypto]
 excerpt: "Bukele apostó el futuro del país a Bitcoin. Construyó una ciudad cripto. Compró el dip. Hoy: 70% de pérdidas, deuda impagable y ciudadanos furiosos."

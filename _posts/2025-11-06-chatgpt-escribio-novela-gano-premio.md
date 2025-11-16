@@ -2,6 +2,7 @@
 layout: post
 title: "ChatGPT escribió una novela completa y ganó un premio literario (nadie se dio cuenta hasta después)"
 date: 2025-11-06 11:00:00 -0500
+image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&h=600&fit=crop"
 categories: [ia]
 tags: [chatgpt, escritura-ia, controversia, arte-artificial]
 excerpt: "Un autor japonés usó ChatGPT para escribir 90% de su novela. Ganó un premio prestigioso. El escándalo explotó cuando confesó. La pregunta: ¿es trampa o el futuro?"

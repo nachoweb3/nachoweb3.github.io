@@ -2,6 +2,7 @@
 layout: post
 title: "Ethereum Dencun: La actualización que reduce las fees de Layer 2"
 date: 2025-11-13 09:00:00 -0500
+image: "https://images.unsplash.com/photo-1622630998477-20aa696ecb05?w=800&h=600&fit=crop"
 categories: [blockchain]
 tags: [ethereum, layer2, dencun, escalabilidad]
 excerpt: "La actualización Dencun de Ethereum ha llegado, reduciendo drásticamente las tarifas en soluciones Layer 2. Descubre cómo afecta al ecosistema."

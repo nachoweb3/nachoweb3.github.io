@@ -24,6 +24,15 @@ Binance te recompensa cuando invitas a nuevos usuarios a la plataforma. Tú gana
 
 Si aún no tienes cuenta:
 
+<div class="referral-box">
+  <h3>Únete a Binance con 20% de descuento</h3>
+  <p>Usa nuestro código de referido para obtener un 20% de descuento permanente en todas tus comisiones de trading. El exchange más grande del mundo te está esperando.</p>
+  <a href="https://www.binance.com/es/register?ref=YOUR_REFERRAL_CODE" target="_blank" rel="noopener noreferrer" class="referral-btn binance">Registrarse en Binance</a>
+  <p class="affiliate-disclaimer">Enlace de afiliado - Obtén 20% de descuento en comisiones de por vida</p>
+</div>
+
+### Pasos de registro
+
 1. Ve a [Binance.com](https://www.binance.com)
 2. Haz clic en "Registrarse"
 3. Completa el formulario con tu email
@@ -220,6 +229,13 @@ No, el programa es completamente gratis.
 ## Conclusión
 
 El programa de referidos de Binance es una excelente oportunidad para generar ingresos pasivos. La clave está en aportar valor a tu audiencia y ser consistente.
+
+<div class="referral-box">
+  <h3>Comienza tu viaje en Binance hoy</h3>
+  <p>Únete a millones de usuarios que confían en el exchange más grande del mundo. Obtén 20% de descuento en todas tus comisiones usando nuestro link de referido.</p>
+  <a href="https://www.binance.com/es/register?ref=YOUR_REFERRAL_CODE" target="_blank" rel="noopener noreferrer" class="referral-btn binance">Crear cuenta en Binance</a>
+  <p class="affiliate-disclaimer">Enlace de afiliado - 20% de descuento permanente en comisiones</p>
+</div>
 
 Empieza hoy mismo:
 1. Obtén tu link

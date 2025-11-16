@@ -42,6 +42,13 @@ Antes de empezar necesitas:
 
 Si no tienes cuenta:
 
+<div class="referral-box">
+  <h3>Registrate en Coinbase y obtén $10 USD de regalo</h3>
+  <p>Usa nuestro link de referido para obtener $10 USD en Bitcoin cuando compres $100 o más en criptomonedas. Tú ganas, yo gano, todos ganamos.</p>
+  <a href="https://www.coinbase.com/join/YOUR_REFERRAL_CODE" target="_blank" rel="noopener noreferrer" class="referral-btn coinbase">Crear cuenta en Coinbase</a>
+  <p class="affiliate-disclaimer">Este es un enlace de afiliado. Ambos recibimos $10 USD cuando completes tu primera compra de $100.</p>
+</div>
+
 ### Proceso de registro
 
 1. Ve a [Coinbase.com](https://www.coinbase.com)
@@ -57,10 +64,6 @@ Si no tienes cuenta:
    - Sube foto de tu ID
    - Selfie de verificación
    - Espera aprobación (5-10 minutos)
-
-### Usa un link de referido
-
-Si usas un link de referido al registrarte, ambos ganan $10 USD cuando compres $100 en cripto. Es un win-win.
 
 ## Paso 2: Accede a Coinbase Earn
 
@@ -311,6 +314,13 @@ Coinbase Earn es una forma excelente de:
 - Aprender sobre blockchain
 - Comenzar sin inversión
 - Explorar el ecosistema cripto
+
+<div class="referral-box">
+  <h3>Empieza ahora y gana $10 USD de bono</h3>
+  <p>No pierdas más tiempo. Crea tu cuenta en Coinbase, completa los cursos de Earn y recibe tus primeras criptomonedas gratis.</p>
+  <a href="https://www.coinbase.com/join/YOUR_REFERRAL_CODE" target="_blank" rel="noopener noreferrer" class="referral-btn coinbase">Registrarse en Coinbase</a>
+  <p class="affiliate-disclaimer">Enlace de afiliado - Recibe $10 USD al completar tu primera compra de $100</p>
+</div>
 
 **Acción inmediata**:
 1. Crea tu cuenta ahora

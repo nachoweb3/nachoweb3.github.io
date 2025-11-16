@@ -1,0 +1,134 @@
+<!-- Widget de YouTube -->
+<section class="youtube-widget">
+    <div class="youtube-header">
+        <h3>Videos recientes del canal</h3>
+        <a href="https://www.youtube.com/@nacho_web3" target="_blank" rel="noopener noreferrer" class="youtube-channel-link">
+            Ver canal completo
+        </a>
+    </div>
+
+    <div class="youtube-embed-container">
+        <!-- Embed de los últimos videos del canal -->
+        <iframe
+            src="https://www.youtube.com/embed?listType=user_uploads&list=@nacho_web3&max_results=1"
+            title="Últimos videos de nacho_web3"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            class="youtube-iframe">
+        </iframe>
+    </div>
+
+    <div class="youtube-cta">
+        <p>Suscríbete para más contenido sobre blockchain, IA y criptomonedas</p>
+        <a href="https://www.youtube.com/@nacho_web3?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="youtube-subscribe-btn">
+            Suscribirse
+        </a>
+    </div>
+</section>
+
+<style>
+.youtube-widget {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+}
+
+.youtube-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.youtube-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.youtube-channel-link {
+    color: #FF0000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease;
+}
+
+.youtube-channel-link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.youtube-embed-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+    background: #000;
+    margin-bottom: var(--spacing-md);
+}
+
+.youtube-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-md);
+}
+
+.youtube-cta {
+    text-align: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+}
+
+.youtube-cta p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.youtube-subscribe-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.75rem 1.5rem;
+    background: #FF0000;
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.youtube-subscribe-btn:hover {
+    background: #CC0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .youtube-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .youtube-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .youtube-widget {
+        padding: var(--spacing-md);
+    }
+}
+</style>

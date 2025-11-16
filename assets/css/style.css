@@ -629,6 +629,92 @@ body {
     }
 }
 
+/* ===== Botones de Referidos ===== */
+.referral-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+}
+
+.referral-box h3 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.referral-box p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.referral-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.referral-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: #f0f0f0;
+}
+
+.referral-btn.binance {
+    background: linear-gradient(135deg, #F3BA2F 0%, #F0B90B 100%);
+    color: #000;
+}
+
+.referral-btn.binance:hover {
+    background: linear-gradient(135deg, #F0B90B 0%, #D4A108 100%);
+}
+
+.referral-btn.coinbase {
+    background: linear-gradient(135deg, #0052FF 0%, #0041CC 100%);
+    color: white;
+}
+
+.referral-btn.coinbase:hover {
+    background: linear-gradient(135deg, #0041CC 0%, #003399 100%);
+}
+
+.affiliate-disclaimer {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: var(--spacing-sm);
+    font-style: italic;
+}
+
+/* Variante simple para botón inline */
+.inline-referral-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin: var(--spacing-sm) 0;
+}
+
+.inline-referral-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
 /* ===== Utilities ===== */
 .text-center {
     text-align: center;

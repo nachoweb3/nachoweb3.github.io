@@ -19,8 +19,18 @@ layout: default
         </div>
     </header>
 
+    <!-- AdSense Banner después del título -->
+    <div class="container">
+        {% include adsense-banner.html %}
+    </div>
+
     <div class="post-content container">
         {{ content }}
+    </div>
+
+    <!-- AdSense Banner al final del contenido -->
+    <div class="container">
+        {% include adsense-banner.html %}
     </div>
 
     <footer class="post-footer container">
@@ -40,6 +50,11 @@ layout: default
         </div>
     </footer>
 </article>
+
+<!-- Widget de YouTube -->
+<div class="container">
+    {% include youtube-widget.html %}
+</div>
 
 <section class="related-posts container">
     <h2>Artículos relacionados</h2>

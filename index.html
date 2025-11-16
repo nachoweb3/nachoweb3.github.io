@@ -35,7 +35,7 @@ title: "Inicio"
     <section class="latest-posts">
         <h2 class="text-center mb-4">Últimos Artículos</h2>
         <div class="posts-grid">
-            {% for post in site.posts limit:6 %}
+            {% for post in site.posts limit:12 %}
                 {% include post-card.html post=post %}
             {% endfor %}
         </div>

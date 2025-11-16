@@ -22,3 +22,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Environment variables (API keys, secrets)
+.env
+scripts/.env

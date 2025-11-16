@@ -10,6 +10,17 @@ import json
 from datetime import datetime
 from groq import Groq
 import re
+from pathlib import Path
+
+# Cargar variables de entorno desde .env
+try:
+    from dotenv import load_dotenv
+    # Cargar .env desde la carpeta del script
+    env_path = Path(__file__).parent / '.env'
+    load_dotenv(dotenv_path=env_path)
+except ImportError:
+    # Si python-dotenv no está instalado, continuar sin él
+    pass
 
 # Configuración de categorías
 CATEGORIES = {
@@ -132,7 +143,7 @@ Responde SOLO en este formato JSON:
 
     try:
         completion = client.chat.completions.create(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-versatile",  # Modelo actualizado (antes llama-3.1-70b-versatile)
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
             max_tokens=300
@@ -164,7 +175,7 @@ def generate_article_content(client, topic, category):
 
     try:
         completion = client.chat.completions.create(
-            model="llama-3.1-70b-versatile",
+            model="llama-3.3-70b-versatile",  # Modelo actualizado (antes llama-3.1-70b-versatile)
             messages=[{"role": "user", "content": prompt}],
             temperature=0.7,
             max_tokens=4000

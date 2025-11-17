@@ -1,43 +1,14 @@
----
-layout: default
-title: "Inicio"
----
-
-<section class="hero container">
-    <h1>NachoWeb3 Blog</h1>
-    <p>Tu fuente de noticias sobre Inteligencia Artificial, Blockchain y las mejores guías</p>
-</section>
-
-<div class="container">
-    <!-- Categorías destacadas -->
-    <section class="categories-section">
-        <h2 class="text-center">Explora por Categoría</h2>
-        <div class="categories-grid">
-            <div class="category-card">
-                <h3>🤖 Inteligencia Artificial</h3>
-                <p>Últimas noticias, avances y herramientas de IA que están transformando el mundo</p>
-                <a href="{{ '/categorias/ia' | relative_url }}" class="category-link">Ver artículos de IA</a>
-            </div>
-            <div class="category-card">
-                <h3>⛓️ Blockchain</h3>
-                <p>Novedades del ecosistema blockchain, criptomonedas, DeFi, NFTs y Web3</p>
-                <a href="{{ '/categorias/blockchain' | relative_url }}" class="category-link">Ver artículos de Blockchain</a>
-            </div>
-            <div class="category-card">
-                <h3>📚 Tutoriales</h3>
-                <p>Las mejores guías paso a paso para dominar herramientas y tecnologías</p>
-                <a href="{{ '/categorias/tutoriales' | relative_url }}" class="category-link">Ver Tutoriales</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Últimos artículos -->
-    <section class="latest-posts">
-        <h2 class="text-center mb-4">Últimos Artículos</h2>
-        <div class="posts-grid">
-            {% for post in site.posts limit:12 %}
-                {% include post-card.html post=post %}
-            {% endfor %}
-        </div>
-    </section>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="KhUyvl8k1Fzop2e2y1NbrULwh5EfzrAjpP39_j7Yrac" />
+    <title>NachoWeb3 Blog</title>
+    <meta http-equiv="refresh" content="0; url=/blog/">
+</head>
+<body>
+    <h1>Redirigiendo al blog...</h1>
+    <p>Si no redirige automáticamente, <a href="/blog/">haz clic aquí</a>.</p>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "name": "NachoWeb3 Blog",
+  "short_name": "NachoWeb3",
+  "description": "Blog sobre IA, Blockchain y Tutoriales de tecnología",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "es",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/assets/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "IA",
+      "short_name": "IA",
+      "description": "Artículos de Inteligencia Artificial",
+      "url": "/categorias/ia",
+      "icons": [{ "src": "/assets/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Blockchain",
+      "short_name": "Blockchain",
+      "description": "Artículos de Blockchain y Cripto",
+      "url": "/categorias/blockchain",
+      "icons": [{ "src": "/assets/icons/icon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Tutoriales",
+      "short_name": "Tutoriales",
+      "description": "Tutoriales y guías paso a paso",
+      "url": "/categorias/tutoriales",
+      "icons": [{ "src": "/assets/icons/icon-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "categories": ["education", "technology", "blog"],
+  "screenshots": [
+    {
+      "src": "/assets/images/screenshot1.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "label": "Página principal"
+    }
+  ]
+}

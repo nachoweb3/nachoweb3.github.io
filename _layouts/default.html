@@ -21,5 +21,28 @@
     <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
     <!-- UX/UI Enhancements -->
     <script src="{{ '/assets/js/enhancements.js' | relative_url }}"></script>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('{{ '/assets/js/sw.js' | relative_url }}')
+                .then(registration => {
+                    console.log('SW registrado: ', registration);
+                })
+                .catch(registrationError => {
+                    console.log('SW registro falló: ', registrationError);
+                });
+        });
+    }
+
+    // Prompt de instalación PWA (opcional)
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        // Mostrar botón de instalación si lo deseas
+    });
+    </script>
 </body>
 </html>

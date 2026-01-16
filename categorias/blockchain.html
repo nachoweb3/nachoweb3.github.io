@@ -1,15 +1,86 @@
 ---
 layout: page
-title: "Blockchain"
+title: "Blockchain y Criptomonedas"
 description: "Novedades del ecosistema blockchain y criptomonedas"
 ---
 
-{% include tag-filter.html category="blockchain" %}
+<div class="category-page category-blockchain-page">
+    <div class="category-hero">
+        <div class="category-icon-large">⛓️</div>
+        <h1>Blockchain & Cripto</h1>
+        <p class="category-description">
+            Descubre las últimas novedades del ecosistema blockchain, análisis de proyectos DeFi,
+            NFTs, Web3 y el futuro de las finanzas descentralizadas.
+        </p>
+        <div class="category-stats">
+            <div class="cat-stat">
+                <span class="cat-stat-number">{{ site.posts | where: "categories", "blockchain" | size }}</span>
+                <span class="cat-stat-label">Artículos</span>
+            </div>
+        </div>
+    </div>
 
-<div class="posts-grid">
-    {% for post in site.posts %}
-        {% if post.categories contains 'blockchain' %}
-            {% include post-card.html post=post %}
-        {% endif %}
-    {% endfor %}
+    <div class="category-tags-section">
+        <h3>Temas Populares</h3>
+        <div class="category-tags">
+            <a href="#bitcoin" class="cat-tag">Bitcoin</a>
+            <a href="#ethereum" class="cat-tag">Ethereum</a>
+            <a href="#defi" class="cat-tag">DeFi</a>
+            <a href="#nfts" class="cat-tag">NFTs</a>
+            <a href="#solana" class="cat-tag">Solana</a>
+        </div>
+    </div>
+
+    {% include tag-filter.html category="blockchain" %}
+
+    <div class="posts-grid">
+        {% for post in site.posts %}
+            {% if post.categories contains 'blockchain' %}
+                {% include post-card.html post=post %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if site.posts | where: "categories", "blockchain" | size == 0 %}
+    <div class="empty-category">
+        <p>Próximamente habrá contenido de Blockchain.</p>
+    </div>
+    {% endif %}
 </div>
+
+<style>
+.category-blockchain-page .category-hero {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%, #fcd34d 100%);
+}
+
+.category-blockchain-page .category-icon-large {
+    animation: float 3s ease-in-out infinite;
+}
+
+.category-blockchain-page .category-hero h1 {
+    color: #92400e;
+}
+
+.category-blockchain-page .category-description {
+    color: #78350f;
+}
+
+.category-blockchain-page .cat-stat-number {
+    color: #92400e;
+}
+
+.category-blockchain-page .cat-stat-label {
+    color: #d97706;
+}
+
+.category-blockchain-page .cat-tag {
+    background: white;
+    color: #d97706;
+    border-color: #fef3c7;
+}
+
+.category-blockchain-page .cat-tag:hover {
+    background: #d97706;
+    color: white;
+}
+</style>

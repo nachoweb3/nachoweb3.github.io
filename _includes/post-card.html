@@ -1,4 +1,4 @@
-<article class="post-card" data-tags="{% if include.post.tags %}{{ include.post.tags | join: ',' }}{% endif %}">
+<article class="post-card" data-tags="{% if include.post.tags %}{{ include.post.tags | join: ',' }}{% endif %}" data-category="{{ include.post.categories[0] }}">
     <a href="{{ include.post.url | relative_url }}" class="post-card-link">
         {% if include.post.image %}
         <div class="post-card-image">
@@ -6,6 +6,9 @@
             <span class="category-badge category-{{ include.post.categories[0] }}">
                 {{ include.post.categories[0] | upcase }}
             </span>
+            {% if include.post.featured %}
+            <span class="featured-badge">⭐ Destacado</span>
+            {% endif %}
         </div>
         {% endif %}
         <div class="post-card-content">
@@ -22,8 +25,16 @@
             <h3 class="post-card-title">{{ include.post.title }}</h3>
             <p class="post-card-excerpt">{{ include.post.excerpt | strip_html | truncate: 150 }}</p>
             <div class="post-card-footer">
+                <span class="reading-time-small">📖 {{ include.post.content | number_of_words | divided_by: 200 }} min</span>
                 <span class="read-more">Leer más →</span>
             </div>
+            {% if include.post.tags %}
+            <div class="post-card-tags">
+                {% for tag in include.post.tags limit: 3 %}
+                <span class="tag-small">#{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </a>
 </article>

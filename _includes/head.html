@@ -2,6 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
 <meta name="author" content="{{ site.author }}">
+<meta name="keywords" content="{{ page.keywords | default: site.keywords | default: 'IA, Inteligencia Artificial, Blockchain, Criptomonedas, Tutorial, Tecnología' }}">
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
 <!-- Google AdSense Site Verification -->
@@ -9,8 +10,35 @@
 <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}
 
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="{{ '/manifest.json' | relative_url }}">
+<link rel="apple-touch-startup-image" href="{{ '/assets/icons/icon-512x512.png' | relative_url }}">
+
 <!-- Canonical URL -->
 <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<!-- Alternate Language -->
+<link rel="alternate" hreflang="es" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">
+
+<!-- RSS Feed -->
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+
+<!-- Preconnect for Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+<!-- DNS Prefetch -->
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="dns-prefetch" href="//googleads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
@@ -18,9 +46,13 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta property="og:description" content="{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 }}">
 <meta property="og:image" content="{{ page.image | default: '/assets/images/default-og.jpg' | absolute_url }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="es_ES">
 {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
 {% if page.categories %}<meta property="article:section" content="{{ page.categories | first }}">{% endif %}
+{% if page.tags %}<meta property="article:tag" content="{{ page.tags | join: ', ' }}">{% endif %}
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
@@ -31,13 +63,18 @@
 <meta name="twitter:site" content="@{{ site.twitter_username }}">
 <meta name="twitter:creator" content="@{{ site.twitter_username }}">
 
+<!-- Additional SEO Meta Tags -->
+<meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
+<meta name="googlebot" content="{{ page.googlebot | default: 'index, follow' }}">
+<meta name="theme-color" content="#6366f1">
+
 <!-- Schema.org structured data -->
 {% if page.layout == 'post' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "{{ page.title }}",
+  "headline": "{{ page.title | xml_escape }}",
   "image": "{{ page.image | absolute_url }}",
   "datePublished": "{{ page.date | date_to_xmlschema }}",
   {% if page.modified_date %}"dateModified": "{{ page.modified_date | date_to_xmlschema }}",{% else %}"dateModified": "{{ page.date | date_to_xmlschema }}",{% endif %}
@@ -54,11 +91,22 @@
       "url": "{{ '/assets/images/logo.png' | absolute_url }}"
     }
   },
-  "description": "{{ page.excerpt | default: page.description | strip_html | truncate: 160 }}",
+  "description": "{{ page.excerpt | default: page.description | strip_html | truncate: 160 | xml_escape }}",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ page.url | absolute_url }}"
-  }
+  },
+  "keywords": "{{ page.keywords | default: site.keywords | default: 'IA, Blockchain, Criptomonedas' }}"
+}
+</script>
+{% elsif page.layout == 'page' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ page.title | xml_escape }}",
+  "description": "{{ page.excerpt | default: page.description | default: site.description | strip_html | truncate: 160 | xml_escape }}",
+  "url": "{{ page.url | absolute_url }}"
 }
 </script>
 {% else %}
@@ -71,18 +119,49 @@
   "description": "{{ site.description }}",
   "publisher": {
     "@type": "Organization",
-    "name": "{{ site.title }}"
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}{{ site.baseurl }}"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site.url }}{{ site.baseurl }}/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
   }
 }
 </script>
 {% endif %}
 
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Inicio",
+    "item": "{{ site.url }}{{ site.baseurl }}"
+  }{% if page.categories %},{
+    "@type": "ListItem",
+    "position": 2,
+    "name": "{{ page.categories | first }}",
+    "item": "{{ site.url }}{{ site.baseurl }}/{{ page.categories | first }}/"
+  }{% endif %}{% if page.title %},{
+    "@type": "ListItem",
+    "position": {% if page.categories %}3{% else %}2{% endif %},
+    "name": "{{ page.title | xml_escape }}",
+    "item": "{{ page.url | absolute_url }}"
+  }{% endif %}]
+}
+</script>
+
+<!-- Stylesheets -->
 <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/newsletter-popup.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/enhancements.css' | relative_url }}">
+
 <!-- Google AdSense Auto Ads -->
 {% include adsense-auto-ads.html %}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">

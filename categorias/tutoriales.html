@@ -1,15 +1,86 @@
 ---
 layout: page
-title: "Tutoriales"
-description: "Las mejores guías paso a paso"
+title: "Tutoriales y Guías"
+description: "Las mejores guías paso a paso para aprender tecnología"
 ---
 
-{% include tag-filter.html category="tutoriales" %}
+<div class="category-page category-tutoriales-page">
+    <div class="category-hero">
+        <div class="category-icon-large">📚</div>
+        <h1>Tutoriales y Guías</h1>
+        <p class="category-description">
+            Aprende paso a paso con nuestras guías detalladas. Desde configurar wallets hasta
+            usar herramientas de IA, todo explicado de forma sencilla.
+        </p>
+        <div class="category-stats">
+            <div class="cat-stat">
+                <span class="cat-stat-number">{{ site.posts | where: "categories", "tutoriales" | size }}</span>
+                <span class="cat-stat-label">Tutoriales</span>
+            </div>
+        </div>
+    </div>
 
-<div class="posts-grid">
-    {% for post in site.posts %}
-        {% if post.categories contains 'tutoriales' %}
-            {% include post-card.html post=post %}
-        {% endif %}
-    {% endfor %}
+    <div class="category-tags-section">
+        <h3>Aprende Sobre</h3>
+        <div class="category-tags">
+            <a href="#binance" class="cat-tag">Binance</a>
+            <a href="#coinbase" class="cat-tag">Coinbase</a>
+            <a href="#chatgpt" class="cat-tag">ChatGPT</a>
+            <a href="#wallets" class="cat-tag">Wallets</a>
+            <a href="#tools" class="cat-tag">Herramientas</a>
+        </div>
+    </div>
+
+    {% include tag-filter.html category="tutoriales" %}
+
+    <div class="posts-grid">
+        {% for post in site.posts %}
+            {% if post.categories contains 'tutoriales' %}
+                {% include post-card.html post=post %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if site.posts | where: "categories", "tutoriales" | size == 0 %}
+    <div class="empty-category">
+        <p>Próximamente habrá tutoriales disponibles.</p>
+    </div>
+    {% endif %}
 </div>
+
+<style>
+.category-tutoriales-page .category-hero {
+    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 50%, #6ee7b7 100%);
+}
+
+.category-tutoriales-page .category-icon-large {
+    animation: float 3s ease-in-out infinite;
+}
+
+.category-tutoriales-page .category-hero h1 {
+    color: #065f46;
+}
+
+.category-tutoriales-page .category-description {
+    color: #064e3b;
+}
+
+.category-tutoriales-page .cat-stat-number {
+    color: #065f46;
+}
+
+.category-tutoriales-page .cat-stat-label {
+    color: #059669;
+}
+
+.category-tutoriales-page .cat-tag {
+    background: white;
+    color: #059669;
+    border-color: #d1fae5;
+}
+
+.category-tutoriales-page .cat-tag:hover {
+    background: #059669;
+    color: white;
+}
+</style>

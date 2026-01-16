@@ -1,24 +1,37 @@
 # robots.txt for NachoWeb3 Blog
-# https://nachoweb3.github.io/blog
+# https://nachoweb3.github.io
 
+# ========== GLOBAL ==========
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 # Disallow admin and private directories
 Disallow: /admin/
 Disallow: /.git/
 Disallow: /.jekyll-cache/
 Disallow: /_site/
+Disallow: /scripts/
+Disallow: /node_modules/
+Disallow: /.gitignore
+Disallow: /Gemfile
+Disallow: /Gemfile.lock
+Disallow: /README.md
+Disallow: *.md$
 
-# Allow CSS and JS for better crawling
+# ========== ALLOWED RESOURCES ==========
 Allow: /assets/css/
 Allow: /assets/js/
+Allow: /assets/images/
+Allow: /assets/icons/
 
-# Allow Google AdSense bot specifically
+# ========== SPECIFIC BOTS ==========
+
+# Google AdSense
 User-agent: Mediapartners-Google
 Allow: /
 
-# Allow Google crawlers
+# Google crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -28,5 +41,41 @@ Allow: /
 User-agent: Googlebot-News
 Allow: /
 
-# Sitemap location
-Sitemap: https://nachoweb3.github.io/blog/sitemap.xml
+User-agent: Google-InspectionTool
+Allow: /
+
+# ========== SOCIAL MEDIA CRAWLERS ==========
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Twitterbot
+Allow: /
+
+# ========== SEARCH ENGINES ==========
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# ========== UNWANTED BOTS ==========
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# ========== SITEMAP ==========
+Sitemap: https://nachoweb3.github.io/sitemap.xml

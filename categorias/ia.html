@@ -4,12 +4,160 @@ title: "Inteligencia Artificial"
 description: "Últimas noticias y avances en el mundo de la IA"
 ---
 
-{% include tag-filter.html category="ia" %}
+<div class="category-page category-ia-page">
+    <!-- Header de Categoría -->
+    <div class="category-hero">
+        <div class="category-icon-large">🤖</div>
+        <h1>Inteligencia Artificial</h1>
+        <p class="category-description">
+            Explora las últimas noticias, avances y descubrimientos en el mundo de la Inteligencia Artificial.
+            Desde modelos de lenguaje hasta aplicaciones revolucionarias.
+        </p>
+        <div class="category-stats">
+            <div class="cat-stat">
+                <span class="cat-stat-number">{{ site.posts | where: "categories", "ia" | size }}</span>
+                <span class="cat-stat-label">Artículos</span>
+            </div>
+        </div>
+    </div>
 
-<div class="posts-grid">
-    {% for post in site.posts %}
-        {% if post.categories contains 'ia' %}
-            {% include post-card.html post=post %}
-        {% endif %}
-    {% endfor %}
+    <!-- Subcategorías/Tags Populares -->
+    <div class="category-tags-section">
+        <h3>Temas Populares</h3>
+        <div class="category-tags">
+            <a href="#chatgpt" class="cat-tag">ChatGPT</a>
+            <a href="#claude" class="cat-tag">Claude</a>
+            <a href="#machine-learning" class="cat-tag">Machine Learning</a>
+            <a href="#gemini" class="cat-tag">Gemini</a>
+            <a href="#automatizacion" class="cat-tag">Automatización</a>
+        </div>
+    </div>
+
+    <!-- Filtro -->
+    {% include tag-filter.html category="ia" %}
+
+    <!-- Posts Grid -->
+    <div class="posts-grid">
+        {% for post in site.posts %}
+            {% if post.categories contains 'ia' %}
+                {% include post-card.html post=post %}
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if site.posts | where: "categories", "ia" | size == 0 %}
+    <div class="empty-category">
+        <p>Próximamente habrá contenido de Inteligencia Artificial.</p>
+    </div>
+    {% endif %}
 </div>
+
+<style>
+.category-page {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category-hero {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.category-icon-large {
+    font-size: 5rem;
+    margin-bottom: var(--spacing-md);
+    animation: float 3s ease-in-out infinite;
+}
+
+.category-hero h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: var(--spacing-md);
+    color: #1e40af;
+}
+
+.category-description {
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+    color: #1e3a8a;
+    line-height: 1.7;
+}
+
+.category-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+}
+
+.cat-stat {
+    text-align: center;
+}
+
+.cat-stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e40af;
+}
+
+.cat-stat-label {
+    color: #3b82f6;
+    font-size: 0.9rem;
+}
+
+.category-tags-section {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.category-tags-section h3 {
+    margin-bottom: var(--spacing-md);
+}
+
+.category-tags {
+    display: flex;
+    gap: var(--spacing-sm);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cat-tag {
+    background: white;
+    color: #3b82f6;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #dbeafe;
+}
+
+.cat-tag:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.empty-category {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .category-hero {
+        padding: var(--spacing-lg);
+    }
+
+    .category-icon-large {
+        font-size: 3rem;
+    }
+}
+</style>

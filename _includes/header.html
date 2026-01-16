@@ -20,12 +20,126 @@
             <li><a href="{{ '/categorias/ia' | relative_url }}" class="nav-link">IA</a></li>
             <li><a href="{{ '/categorias/blockchain' | relative_url }}" class="nav-link">Blockchain</a></li>
             <li><a href="{{ '/categorias/tutoriales' | relative_url }}" class="nav-link">Tutoriales</a></li>
+            <li><a href="{{ '/archivo' | relative_url }}" class="nav-link">Archivo</a></li>
             <li><a href="{{ '/sobre-mi' | relative_url }}" class="nav-link">Sobre Mí</a></li>
         </ul>
+
+        <div class="nav-actions">
+            <button class="search-toggle" id="searchToggle" aria-label="Buscar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </button>
+            <button class="dark-mode-toggle-header" id="darkModeToggle" aria-label="Modo oscuro">
+                <span class="moon">🌙</span>
+                <span class="sun">☀️</span>
+            </button>
+        </div>
     </nav>
 
-    <!-- Barra de búsqueda -->
-    <div class="container">
-        {% include search-bar.html %}
+    <!-- Search Bar (oculto por defecto) -->
+    <div class="search-expanded" id="searchExpanded">
+        <div class="container">
+            {% include search-bar.html %}
+        </div>
     </div>
 </header>
+
+<style>
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.search-toggle,
+.dark-mode-toggle-header {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.search-toggle:hover,
+.dark-mode-toggle-header:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--primary-color);
+}
+
+.dark-mode-toggle-header .sun {
+    display: none;
+}
+
+body.dark-mode .dark-mode-toggle-header .moon {
+    display: none;
+}
+
+body.dark-mode .dark-mode-toggle-header .sun {
+    display: inline;
+}
+
+.search-expanded {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.search-expanded.active {
+    max-height: 100px;
+}
+
+@media (min-width: 769px) {
+    .nav-actions {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-actions {
+        position: fixed;
+        bottom: var(--spacing-md);
+        right: var(--spacing-md);
+        z-index: 998;
+    }
+
+    .dark-mode-toggle-header {
+        display: none; /* Usar el botón flotante en móvil */
+    }
+}
+</style>
+
+<script>
+(function() {
+    // Toggle de búsqueda
+    const searchToggle = document.getElementById('searchToggle');
+    const searchExpanded = document.getElementById('searchExpanded');
+
+    if (searchToggle && searchExpanded) {
+        searchToggle.addEventListener('click', () => {
+            searchExpanded.classList.toggle('active');
+        });
+    }
+
+    // Toggle de dark mode en header
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            document.querySelector('.dark-mode-toggle:not(.dark-mode-toggle-header)')?.click();
+        });
+    }
+
+    // Cerrar búsqueda al hacer click fuera
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-expanded') && !e.target.closest('.search-toggle')) {
+            searchExpanded?.classList.remove('active');
+        }
+    });
+})();
+</script>
